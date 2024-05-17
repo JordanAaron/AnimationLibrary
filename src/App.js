@@ -1,4 +1,5 @@
 import './App.css'
+import { AnimationWrapper, ImageReveal } from './components'
 
 function App() {
 	return (
@@ -8,6 +9,10 @@ function App() {
 				This is a library of cool animations that you can include in your
 				website.
 			</p>
+
+			<AnimationWrapper title={'Image Reveal'}>
+				<ImageReveal />
+			</AnimationWrapper>
 		</div>
 	)
 }
