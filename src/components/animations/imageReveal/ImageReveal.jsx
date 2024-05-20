@@ -1,5 +1,9 @@
 import { useState } from 'react'
+
+import { Button } from '../../../components'
+
 import carImage from '../../../assets/car.jpg'
+
 import './ImageReveal.css'
 
 export const ImageReveal = () => {
@@ -12,8 +16,14 @@ export const ImageReveal = () => {
 				<div className={`imageCover ${runAnimation ? 'slideDown' : ''}`}></div>
 			</div>
 			<div className="buttons">
-				<button onClick={() => setRunAnimation(true)}>Run</button>
-				<button onClick={() => setRunAnimation(false)}>Reset</button>
+				<Button
+					innerText="Run Animation"
+					onClick={() => setRunAnimation(true)}
+				/>
+				<Button
+					innerText="Reset Animation"
+					onClick={() => setRunAnimation(false)}
+				/>
 			</div>
 		</div>
 	)
