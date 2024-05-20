@@ -1,2 +1,2 @@
 export { AnimationWrapper } from './animationWrapper/AnimationWrapper'
-export { ImageReveal } from './imageReveal/ImageReveal'
+export { ImageReveal } from './animations/imageReveal/ImageReveal'

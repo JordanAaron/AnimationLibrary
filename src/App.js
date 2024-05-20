@@ -10,7 +10,7 @@ function App() {
 				website.
 			</p>
 
-			<AnimationWrapper title={'Image Reveal'}>
+			<AnimationWrapper title={'Image Reveal'} color={'#a2c5ac'}>
 				<ImageReveal />
 			</AnimationWrapper>
 		</div>
