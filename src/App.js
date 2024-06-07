@@ -1,5 +1,5 @@
 import './App.css'
-import { AnimationWrapper, ImageReveal } from './components'
+import { AnimationWrapper, ImageReveal, SignUp } from './components'
 
 function App() {
 	return (
@@ -9,9 +9,11 @@ function App() {
 				This is a library of cool animations that you can include in your
 				website.
 			</p>
-
 			<AnimationWrapper title={'Image Reveal'} color={'#a2c5ac'}>
 				<ImageReveal />
+			</AnimationWrapper>
+			<AnimationWrapper title={'Sign Up'}>
+				<SignUp />
 			</AnimationWrapper>
 		</div>
 	)

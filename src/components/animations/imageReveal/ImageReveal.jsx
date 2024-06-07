@@ -10,7 +10,7 @@ export const ImageReveal = () => {
 	const [runAnimation, setRunAnimation] = useState(false)
 
 	return (
-		<div className="container">
+		<div className="imageRevealContainer">
 			<div className="imageContainer">
 				<img src={carImage} alt="by Václav Pechar on Unsplash" />
 				<div className={`imageCover ${runAnimation ? 'slideDown' : ''}`}></div>
