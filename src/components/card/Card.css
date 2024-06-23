@@ -1,0 +1,12 @@
+.card {
+	width: 200px;
+	height: 200px;
+	border: 1px solid var(--platinum);
+	border-radius: 16px;
+	padding: 1rem;
+}
+
+.card-button {
+	display: flex;
+	justify-content: flex-end;
+}

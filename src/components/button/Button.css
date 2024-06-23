@@ -1,14 +1,17 @@
 .buttonContainer {
-	border: 1px solid black;
+	border: 1px solid;
+	border-radius: 25px;
+
 	padding: 0.5rem 1rem;
-	background-color: transparent;
+
+	color: white;
+
 	transition: 0.2s;
 }
 
 .buttonContainer:hover {
 	cursor: pointer;
-	border-radius: 25px;
 
-	background-color: black;
-	color: white;
+	background-color: transparent !important;
+	color: black;
 }
