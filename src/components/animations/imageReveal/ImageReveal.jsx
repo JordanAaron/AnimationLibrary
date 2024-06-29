@@ -16,19 +16,12 @@ export const ImageReveal = () => {
 				<div className={`imageCover ${runAnimation ? 'slideDown' : ''}`}></div>
 			</div>
 			<div className="buttons">
-				<Button
-					innerText="Run Animation"
-					onClick={() => setRunAnimation(true)}
-				/>
-				<Button
-					innerText="Reset Animation"
-					onClick={() => setRunAnimation(false)}
-				/>
+				<Button onClick={() => setRunAnimation(true)}>Run Animation</Button>
+				<Button onClick={() => setRunAnimation(false)}>Reset Animation</Button>
 			</div>
 		</div>
 	)
 }
-{
-	/* <a href="https://unsplash.com/@venajeborec?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"></a>
+
+/* <a href="https://unsplash.com/@venajeborec?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"></a>
 <a href="https://unsplash.com/photos/a-blue-car-parked-on-the-side-of-the-road-PqDS7Cn0aEc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"></a> */
-}
