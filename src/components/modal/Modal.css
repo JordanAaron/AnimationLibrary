@@ -1,4 +1,4 @@
-.modal-background {
+.modal {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -7,7 +7,7 @@
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
-.modal {
+.modal-content {
 	background-color: #fff;
 	margin: 15% auto;
 	padding: 20px;
@@ -15,4 +15,21 @@
 	width: 80%;
 	height: 80%;
 	transform: translateY(-30%);
+}
+
+.modal-main {
+	border: 1px solid #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10rem;
+	height: 75%;
+}
+
+.animation-container {
+	border: 1px solid #000;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }

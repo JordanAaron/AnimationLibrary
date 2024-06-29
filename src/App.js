@@ -43,8 +43,8 @@ function App() {
 	return (
 		<div className="App">
 			{isModalOpen && selectedCard && (
-				<Modal onClose={handleCloseModal} title={selectedCard.title}>
-					<div className="modal-content">{renderModalContent()}</div>
+				<Modal onClose={handleCloseModal} card={selectedCard}>
+					{renderModalContent()}
 				</Modal>
 			)}
 			<main className="main">
