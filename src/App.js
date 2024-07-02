@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Card, Modal, ImageReveal, SignUp } from './components'
+import { animationCards } from './content'
 import './App.css'
 
 function App() {
@@ -15,19 +16,6 @@ function App() {
 		setIsModalOpen(false)
 		setSelectedCard(null)
 	}
-
-	const cards = [
-		{
-			title: 'Image Reveal',
-			description:
-				'An animation that reveals an image when it comes into view.',
-		},
-		{
-			title: 'Sign Up',
-			description:
-				'An animation that changes your sign up button into a sign up form on click.',
-		},
-	]
 
 	const renderModalContent = () => {
 		switch (selectedCard?.title) {
@@ -53,8 +41,8 @@ function App() {
 					This is a library of cool animations that you can include in your
 					website.
 				</p>
-				<div className="cards">
-					{cards.map((card, index) => (
+				<div className="animation-cards">
+					{animationCards.map((card, index) => (
 						<Card
 							key={index}
 							title={card.title}
