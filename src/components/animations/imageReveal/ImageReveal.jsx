@@ -16,8 +16,8 @@ export const ImageReveal = () => {
 				<div className={`imageCover ${runAnimation ? 'slideDown' : ''}`}></div>
 			</div>
 			<div className="buttons">
-				<Button onClick={() => setRunAnimation(true)}>Run Animation</Button>
-				<Button onClick={() => setRunAnimation(false)}>Reset Animation</Button>
+				<Button onClick={() => setRunAnimation(true)}>Run</Button>
+				<Button onClick={() => setRunAnimation(false)}>Reset</Button>
 			</div>
 		</div>
 	)

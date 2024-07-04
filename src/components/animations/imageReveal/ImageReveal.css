@@ -14,8 +14,8 @@
 img {
 	position: absolute;
 	top: 1%;
-	left: 0;
-	width: 100%;
+	left: 1%;
+	width: 98%;
 	height: 98%;
 }
 /* TODO: fix the image container height */
@@ -49,5 +49,12 @@ img {
 	}
 	100% {
 		top: 100%;
+	}
+}
+
+@media (max-width: 1280px) {
+	.imageContainer {
+		width: 200px;
+		height: 300px;
 	}
 }

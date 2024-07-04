@@ -9,7 +9,16 @@
 	transition: 0.2s;
 }
 
-.buttonContainer:hover {
+@media (hover: hover) {
+	.buttonContainer:hover {
+		cursor: pointer;
+
+		background-color: transparent !important;
+		color: black;
+	}
+}
+
+.buttonContainer:active {
 	cursor: pointer;
 
 	background-color: transparent !important;
