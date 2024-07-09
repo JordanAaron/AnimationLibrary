@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Card, Modal, ImageReveal, SignUp } from './components'
+import { Card, Modal, ImageReveal } from './components'
 import { animationCards } from './content'
 import './App.css'
 
@@ -21,8 +21,6 @@ function App() {
 		switch (selectedCard?.title) {
 			case 'Image Reveal':
 				return <ImageReveal />
-			case 'Sign Up':
-				return <SignUp />
 			default:
 				return null
 		}
