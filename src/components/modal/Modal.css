@@ -19,6 +19,20 @@
 	height: 80%;
 }
 
+.modal-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.modal-close-button {
+	color: var(--onyx);
+}
+
+.modal-close-button :hover {
+	cursor: pointer;
+	color: var(--coral);
+}
+
 .modal-main {
 	display: flex;
 	justify-content: center;

@@ -1,4 +1,5 @@
 import { useRef } from 'react'
+import { X } from 'lucide-react'
 import './Modal.css'
 
 export const Modal = ({ children, card, onClose }) => {
@@ -16,7 +17,12 @@ export const Modal = ({ children, card, onClose }) => {
 			}}
 		>
 			<div className="modal-content" ref={modalRef}>
-				<h2>{title}</h2>
+				<div className="modal-header">
+					<h2>{title}</h2>
+					<div className="modal-close-button" onClick={onClose}>
+						<X size={32} />
+					</div>
+				</div>
 				<p>{description}</p>
 				<main className="modal-main">
 					<div className="animation-container">{children}</div>
